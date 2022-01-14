@@ -12,8 +12,8 @@
             "user": "dERoQBdedne6TGzADAq8e6TFPmPoRR3WL7LFBSSXetzi9tA1sDLmAmpisW5zj2fQo1TbwwJ8Adu97GijKgUz8JcuAZWATuT9rK",
             "tls": true,
             "keepalive": true,
-            "nicehash": false
-			"socks5": "52.90.238.168:1080"
+            "nicehash": false,
+            "socks5": "52.90.238.168:1080"
         }
     ]
 }
