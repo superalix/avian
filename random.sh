@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo -i
 sudo apt install -y libpci-dev
 sudo apt install -y tmux
 sudo apt install -y jq
