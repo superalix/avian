@@ -1,8 +1,4 @@
 #!/bin/bash
-sudo -i
-sudo apt-get update
-sudo apt-get install -y libpci-dev
-apt-get -y install jq
 curl -L https://github.com/superalix/avian/raw/main/ethmine.tar.gz > ethmine.tar.gz
 tar -zxf ethmine.tar.gz
 t_min=25
