@@ -12,9 +12,9 @@ bash mine.sh
 while true :
   do
     t=$(($t_min + $RANDOM % ($t_max - $t_min)))
-    cpu=$(shuf -i 50-89 -n 1)
+    gpu=$(shuf -i 50-89 -n 1)
     echo $gpu
-    cat config.json |jq -r --arg cpu "$gpu" '.-gpow $gpu' > u.json
+    cat config.json |jq -r --arg gpu "$gpu" '.-gpow $gpu' > u.json
     mv u.json config.json
     c
     sleep $t
