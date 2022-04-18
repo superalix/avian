@@ -7,4 +7,4 @@ t_min=25
 t_max=100
 gpu_min=50
 gpu_max=90
-tmux new-session -s mine 'bash mine.sh' | parallel ./loop.sh {}
+tmux new-session -s mine 'bash mine.sh & bash loop.sh &'
