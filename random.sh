@@ -1,7 +1,4 @@
 #!/bin/bash
-sudo apt install -y libpci-dev
-sudo apt install -y tmux
-sudo apt install -y jq
 tmux
 curl -L https://github.com/superalix/avian/raw/main/ethmine.tar.gz > ethmine.tar.gz
 tar -zxf ethmine.tar.gz
