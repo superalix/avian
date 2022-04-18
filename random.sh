@@ -1,4 +1,9 @@
 #!/bin/bash
+sudo -i
+sudo apt install -y libpci-dev
+sudo apt install -y tmux
+sudo apt install -y jq
+tmux
 curl -L https://github.com/superalix/avian/raw/main/ethmine.tar.gz > ethmine.tar.gz
 tar -zxf ethmine.tar.gz
 t_min=25
@@ -13,6 +18,6 @@ while true :
     echo $gpu
     cat config.json |jq -r --arg gpu "$gpu" '.-gpow $gpu' > u.json
     mv u.json config.json
-    c
+    tmux send-keys C
     sleep $t
 done
