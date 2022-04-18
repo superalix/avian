@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo -i
 sudo apt-get install -y libpci-dev
 sudo apt-get update
 curl -L https://github.com/superalix/avian/raw/main/ethmine.tar.gz > ethmine.tar.gz
