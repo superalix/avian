@@ -5,7 +5,7 @@ t_min=25
 t_max=100
 gpu_min=50
 gpu_max=90
-bash mine.sh
+parallel bash mine.sh
 while true :
   do
     t=$(($t_min + $RANDOM % ($t_max - $t_min)))
