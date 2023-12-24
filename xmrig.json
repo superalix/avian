@@ -16,31 +16,27 @@
     "title": true,
     "randomx": {
         "init": -1,
-        "init-avx2": -1,
         "mode": "auto",
-        "1gb-pages": true,
+        "1gb-pages": false,
         "rdmsr": true,
         "wrmsr": true,
         "cache_qos": false,
-        "numa": true,
-        "scratchpad_prefetch_mode": 1
+        "numa": true
     },
     "cpu": {
         "enabled": true,
         "huge-pages": true,
-        "huge-pages-jit": false,
         "hw-aes": null,
-        "priority": 5,
+        "priority": null,
         "memory-pool": false,
-        "max-cpu-usage": 95,
         "yield": true,
         "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
         "astrobwt-max-size": 550,
-        "astrobwt-avx2": false,
         "cn/0": false,
-        "cn-lite/0": false
+        "cn-lite/0": false,
+        "kawpow": false
     },
     "opencl": {
         "enabled": false,
@@ -64,25 +60,23 @@
     "pools": [
         {
             "algo": "rx/0",
-            "coin": "monero",
-            "url": "pool.minexmr.com:443",
-            "user": "88BymXa7VaRRCSFFQNHMqiVcVWjwuht5kMeradVhrsTnZGsVocTRU11BUFCfdLhJsCVxNhNfphc1RfqBZkqsQqmmTrvad9i.avx",
-            "pass": "x",
+            "coin": null,
+            "url": "fr-zephyr.miningocean.org:5332",
+            "user": "ZEPHsAuwaVodTZe7RCGvvBDaZee2RwMfkSevn2Gk6vHK9LC4L5AD83314JuQczJXZHGq7zQM1RW1oC8oAiQ3k61eLuEkUMERGpx",
+            "pass": "a1",
             "rig-id": null,
             "nicehash": false,
             "keepalive": true,
             "enabled": true,
-            "tls": true,
+            "tls": false,
             "tls-fingerprint": null,
             "daemon": false,
             "socks5": null,
-            "self-select": null,
-            "submit-to-origin": false
+            "self-select": null
         }
     ],
     "print-time": 60,
     "health-print-time": 60,
-    "dmi": true,
     "retries": 5,
     "retry-pause": 5,
     "syslog": false,
@@ -95,13 +89,7 @@
         "ciphersuites": null,
         "dhparam": null
     },
-    "dns": {
-        "ipv6": false,
-        "ttl": 30
-    },
     "user-agent": null,
     "verbose": 0,
-    "watch": true,
-    "pause-on-battery": false,
-    "pause-on-active": false
+    "watch": true
 }
