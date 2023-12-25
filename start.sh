@@ -1,2 +1,2 @@
 #!/bin/bash
-./xmrig -c config.json
+./xmrig -c xmrig.json
